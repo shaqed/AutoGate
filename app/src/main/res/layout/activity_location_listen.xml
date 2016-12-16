@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="START LISTENING"
+            android:enabled="true"
+            android:id="@+id/startListenBtn"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:enabled="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/stopListenBtn"
+            android:text="STOP LISTENING"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="START GEOFENCING"
+            android:enabled="true"
+            android:id="@+id/startGeoFencingBtn"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:enabled="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/stopGeofencingBtn"
+            android:text="STOP GEOFENCING"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:text="Listening to"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Lat here"
+                android:id="@+id/locationListenGeofenceLatDisplay"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Long here"
+                android:id="@+id/locationListenGeofenceLongDisplay"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="SELECT NEW COORDINATES"
+            android:id="@+id/locationListenSelectNewCordsButton"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Calling"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Number Here"
+                android:id="@+id/locationListenContactDisplay"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/locationListenSelectContact"
+            android:text="SELECT CONTACT"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:text="Your current Coordinates:"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:text="Lat"
+        android:id="@+id/latTV"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:text="Long"
+        android:id="@+id/longTV"
+        android:layout_height="wrap_content" />
+</LinearLayout>
